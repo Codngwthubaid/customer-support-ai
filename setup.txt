@@ -7,4 +7,8 @@ Setup Work -
     tailwind v4
 3. monorepo
     shared packages
-    shared shadcn component
+    shared shadcn component4
+4. resolves @eslint/js build issue present inside the package/eslint-config by adding @eslint/js
+5. convex setup
+    guide : https://github.com/get-convex/turbo-expo-nextjs-clerk-convex-monorepo
+    
