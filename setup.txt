@@ -1,0 +1,10 @@
+Setup Work -
+1. pnpm v10 or greater
+2. turborepo
+    shadcn
+    next 15
+    react 19
+    tailwind v4
+3. monorepo
+    shared packages
+    shared shadcn component
