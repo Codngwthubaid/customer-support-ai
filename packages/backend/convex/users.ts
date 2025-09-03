@@ -1,4 +1,8 @@
+// query : for reading data from DB
+//  mutation : for manipulation data in DB - CRUD
+
 import { mutation, query } from "./_generated/server"
+
 
 export const getMany = query({
     args: {},
