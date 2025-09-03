@@ -11,4 +11,4 @@ Setup Work -
 4. resolves @eslint/js build issue present inside the package/eslint-config by adding @eslint/js
 5. convex setup
     guide : https://github.com/get-convex/turbo-expo-nextjs-clerk-convex-monorepo
-    
+    guide : see ui folder from backend connected with frontend
