@@ -13,5 +13,10 @@ Setup Work -
     guide : https://github.com/get-convex/turbo-expo-nextjs-clerk-convex-monorepo
     guide : see ui folder from backend connected with frontend
 6.  resolves dev dependency issue of eslint dependency in backend
-7. clerk setup 
+7. clerk setup according to convex
+    sign-in page
+    sign-up page
+    middleware file
+    authenticated and unauthenticated components
+8. organizations setup
     
