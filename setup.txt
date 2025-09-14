@@ -19,4 +19,9 @@ Setup Work -
     middleware file
     authenticated and unauthenticated components
 8. organizations setup
-    
+    clerk charges : charges if they found more than 1 current active users (members) in an organization    
+    bussiness Logic : 
+        FREE PLAN -
+        default membership limit : 1
+        create unlimited organizations
+
