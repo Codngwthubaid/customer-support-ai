@@ -1,6 +1,6 @@
 "use client"
 
-import { useMutation, useQuery } from "convex/react"
+import { useMutation } from "convex/react"
 import { api } from "@workspace/backend/_generated/api"
 import { Button } from "@workspace/ui/components/button"
 import { OrganizationSwitcher, UserButton } from "@clerk/nextjs";
@@ -8,7 +8,6 @@ import { OrganizationSwitcher, UserButton } from "@clerk/nextjs";
 
 export default function Page() {
 
-  const user = useQuery(api.users.getMany)
   const add_user = useMutation(api.users.add_handler)
 
   return (
@@ -18,7 +17,6 @@ export default function Page() {
         <OrganizationSwitcher hidePersonal/>
         <UserButton />
         <Button onClick={() => add_user()}>Add</Button>
-        <p>{JSON.stringify(user)}</p>
       </div>
     </div>
   )

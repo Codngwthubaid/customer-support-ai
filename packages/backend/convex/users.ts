@@ -18,6 +18,12 @@ export const add_handler = mutation({
     handler: async (ctx: any) => {
         const identity = await ctx.auth.getUserIdentity();
         if (identity === null) throw new Error("Not authenticated");
+
+        const orgId = identity.orgId as string;
+        if(!orgId) throw new Error("Organization Missing...")
+
+        throw new Error("Tracking Error Testing..")
+
         const userId = await ctx.db.insert("users", {
             name: "Ubaid"
         })

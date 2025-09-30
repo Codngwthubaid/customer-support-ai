@@ -24,4 +24,7 @@ Setup Work -
         FREE PLAN -
         default membership limit : 1
         create unlimited organizations
-
+9. error tracking
+    create error arising scenario
+    track error in convex dashboard
+    integate sentry - connect convex : not possible (available only on pro plan)

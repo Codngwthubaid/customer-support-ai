@@ -20,19 +20,12 @@ const isOrganizationFreeRoute = createRouteMatcher(
 export default clerkMiddleware(async (auth, req) => {
 
   const { userId, orgId } = await auth()
-
   if (!isPublicRoute(req)) auth.protect()
 
   if (userId && !orgId && !isOrganizationFreeRoute(req)) {
-
     const searchParams = new URLSearchParams({ redirectUrl: req.url })
-
-    const organizationSelection = new URL(
-      `/organization-selection/${searchParams.toString()}`
-    )
-
+    const organizationSelection = new URL(`/organization-selection/${searchParams.toString()}`)
     return NextResponse.redirect(organizationSelection);
-
   }
 });
 
